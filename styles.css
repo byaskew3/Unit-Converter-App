@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #dbe2e6;
+}
+
+input {
+    border: none;
+    font-size: 18px;
+    border-radius: 2px;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 60px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-shadow: 1px 1px 2px rgb(197, 197, 197);
+}
+
+.container-upper {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 50px;
+}
+
+.container-upper h1 {
+    margin-bottom: 40px;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.container-lower {
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.container-lower div {
+    margin: 30px;
+}
+
+.container-lower h4 {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0F2027;
+}
+
+.container-lower p {
+    font-size: 14px;
+    color: gray;
+    font-weight: 300;
+}
