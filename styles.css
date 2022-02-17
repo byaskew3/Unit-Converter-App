@@ -12,10 +12,29 @@ body {
 }
 
 input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border-radius: 2px;
+    font-weight: 300;
+    box-shadow: rgba(44, 96, 131, 0.35) 0px 5px 15px;
+    background-color: rgb(230, 230, 230);
+    border: 2px solid #476774;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
     border: none;
     font-size: 18px;
     border-radius: 2px;
     font-weight: 300;
+    color: rgb(255, 255, 255);
+    background-color: #213036;
+    box-shadow: rgba(44, 96, 131, 0.35) 0px 5px 15px;
+    border: 1px solid #476774;
+}
+
+button:hover {
+    background-color: #778185;
 }
 
 .container {

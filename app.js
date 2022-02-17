@@ -50,6 +50,16 @@ function mass(num) {
     massMeasure2.textContent = poundsToKilos;
 };
 
-length(20);
-volume(20);
-mass(20);
+// Enter key functionality
+inputEl.addEventListener('keyup', function(e) {
+    if (e.keyCode === 13) {
+        e.preventDefault();
+        document.querySelector('.myBtn').click();
+    }
+})
+
+function runApp() {
+    length(inputEl.value);
+    volume(inputEl.value);
+    mass(inputEl.value);
+}
