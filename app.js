@@ -1,4 +1,6 @@
-// caching the DOM
+// ------------- CACHING THE DOM ---------------
+
+// input element
 let inputEl = document.querySelector('.input-el');
 
 // length elements
@@ -17,7 +19,9 @@ let massMeasure = document.querySelector('.mass-measure');
 let massMeasure2 = document.querySelector('.mass-measure-2');
 
 
-// create function length(), volume(), mass()
+// ------------- create function length(), volume(), mass() --------------------
+
+// length()
 function length(num) {
     for(let i = 0; i < lengthEl.length; i++) {
         lengthEl[i].textContent = num;
@@ -29,7 +33,7 @@ function length(num) {
 };
 
 
-
+// volume()
 function volume(num) {
     for(let i = 0; i < volumeEl.length; i++) {
         volumeEl[i].textContent = num;
@@ -40,6 +44,8 @@ function volume(num) {
     volumeMeasure2.textContent = gallonsToLiters;
 };
 
+
+// mass()
 function mass(num) {
     for(let i = 0; i < massEl.length; i++){
         massEl[i].textContent = num;
@@ -50,6 +56,7 @@ function mass(num) {
     massMeasure2.textContent = poundsToKilos;
 };
 
+
 // Enter key functionality
 inputEl.addEventListener('keyup', function(e) {
     if (e.keyCode === 13) {
@@ -58,6 +65,8 @@ inputEl.addEventListener('keyup', function(e) {
     }
 })
 
+
+// runApp()
 function runApp() {
     length(inputEl.value);
     volume(inputEl.value);
